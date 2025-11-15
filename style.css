@@ -1,0 +1,251 @@
+/* CSS BY Judy Ann Dagdagan */
+
+/* IMPORTED FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kavoon&display=swap');
+
+/* CSS RESET */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ROOT VARIABLES */
+:root {
+  --teal: #4CA7C0;
+  --purple: #484FB7;
+  --lavender: #6B8FE7;
+  --yellow: #E9BB57;
+  --pink: #D9526F;
+  --dark-gray: #1E1E1E;
+  --white: #ffffff;
+
+  /* Other styling vars */
+  --radius-lg: 18px;
+  --shadow-soft: 0 6px 14px rgba(0, 0, 0, 0.12);
+}
+
+/* GLOBAL STYLES (mobile first/small) */
+
+body {
+  background: var(--lavender);
+  font-family: "Inter", sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 24px 8px;
+  color: var(--dark-gray);
+}
+
+/* Page shell (phone screen) */
+.page-shell {
+  width: 100%;
+  max-width: 450px;
+  background: var(--purple);
+  border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+}
+
+.page-bg {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* ---------- TYPOGRAPHY ---------- */
+h1, h2 {
+  font-family: "Kavoon", serif;
+}
+
+h1 {
+  font-size: 3em;        /* REQUIRED */
+  color: var(--white);
+}
+
+h2 {
+  font-size: 2em;        /* REQUIRED */
+  color: var(--dark-gray);
+}
+
+nav h2 {
+  font-size: 1.5em;      /* REQUIRED nav size */
+}
+
+h3 {
+  font-size: 1.5em;      /* REQUIRED */
+  font-family: "Inter", sans-serif;
+}
+
+h4 {
+  font-size: 1.15em;     /* REQUIRED */
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+}
+
+/* ---------- HEADER ---------- */
+
+.site-header {
+  text-align: center;
+  padding: 28px 20px 14px;
+  background: var(--purple);
+}
+
+.site-subtitle {
+  color: var(--white);
+  font-size: 0.9rem;
+}
+
+/* ---------- MENU ---------- */
+
+.menu-card {
+  background: var(--yellow);
+  padding: 18px 24px 22px;
+}
+
+.menu-label {
+  text-align: center;
+  font-family: "Kavoon";
+  font-size: 1.2em;
+  color: var(--dark-gray);
+  margin-bottom: 12px;
+}
+
+.menu-link {
+  display: block;
+  background: var(--white);
+  color: var(--dark-gray);
+  text-align: center;
+  text-decoration: none;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.menu-link-primary {
+  background: var(--pink);
+  color: var(--white);
+}
+
+/* ---------- MAIN CONTENT ---------- */
+
+main {
+  background: var(--white);
+}
+
+.section {
+  padding: 20px;
+}
+
+.section-heading {
+  font-family: "Kavoon";
+  font-size: 2em;
+  margin-bottom: 12px;
+}
+
+/* ---------- SERVICE CARDS ---------- */
+
+.service-card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 12px;
+  background: var(--white);
+  border-radius: 12px;
+  padding: 14px;
+  margin-bottom: 14px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.icon-wrap {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-img {
+  max-width: 40px;
+  max-height: 40px;
+}
+
+/* ---------- WHY CHOOSE US ---------- */
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.pill {
+  background: var(--yellow);
+  padding: 12px;
+  border-radius: 12px;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* ---------- PRICING TABLES ---------- */
+
+.pricing-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 16px;
+  background: var(--white);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.pricing-table th {
+  background: var(--lavender);
+  padding: 10px;
+  text-align: left;
+}
+
+.pricing-table td {
+  padding: 10px;
+}
+
+.pricing-table tr:nth-child(even) {
+  background: #f0f0ff;
+}
+
+/* ---------- CTA ---------- */
+
+.cta-section {
+  background: var(--pink);
+  color: var(--white);
+  border-radius: 18px 18px 0 0;
+  padding: 24px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.btn-primary {
+  display: inline-block;
+  background: var(--white);
+  color: var(--pink);
+  padding: 12px 22px;
+  margin-top: 10px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+/* ---------- FOOTER ---------- */
+
+.site-footer {
+  background: var(--purple);
+  color: var(--white);
+  padding: 14px;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.footer-link {
+  color: var(--white);
+  text-decoration: underline;
+}
