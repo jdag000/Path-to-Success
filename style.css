@@ -161,16 +161,16 @@ main {
 }
 
 .icon-wrap {
-  width: 48px;
-  height: 48px;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  width: 100%;        
+  margin-bottom: 6px; 
 }
 
 .icon-img {
-  max-width: 40px;
-  max-height: 40px;
+  max-width: 50px; 
+  height: auto;
 }
 
 /* ---------- WHY CHOOSE US ---------- */
