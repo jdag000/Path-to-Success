@@ -242,74 +242,62 @@ main {
 }
 
 /* ---------- PRICING ---------- */
-
-.pricing-table {
-  width: 260px;                
-  margin: 0 0 20px 24px;        
-  border-collapse: collapse;
-  background: var(--white);
-  border-radius: 0;
-  overflow: hidden;
-  box-shadow: none;
-}
-
-/* header row (yellow bar) */
 #pricing {
-  background: var(--purple);
-  padding: 28px 20px 40px;
+  background: var(--purple);    
   color: var(--white);
-  text-align: left;
+  text-align: center;
 }
 
 #pricing .section-heading {
   color: var(--white);
-  margin-bottom: 12px;
+
 }
 
+/* Yellow subsection titles */
 #pricing h3 {
   color: var(--yellow);
-  margin-top: 20px;
-  margin-bottom: 10px;
-  font-size: 1.5em; 
+  text-align: left;
+  font-size: 1.4em;
+  margin-top: 26px;
+  margin-bottom: 12px;
 }
-
 .pricing-table {
-  width: 260px;               
-  margin: 0 auto 22px auto;   
+  width: 260px;
+  margin: 0 auto 22px auto;
   background: var(--white);
   border-collapse: collapse;
-  border-radius: 0;
   overflow: hidden;
-  box-shadow: none;
 }
 
+/* Header cells */
 .pricing-table th {
   background: var(--yellow);
   color: var(--dark-gray);
   font-weight: 700;
   font-size: 0.85rem;
   text-transform: uppercase;
-  padding: 8px 12px;
-  border-bottom: 2px solid #e0e0e0;
-  text-align: center;    
+  padding: 10px;
+  text-align: center;
+
+  border: 1px solid var(--yellow);  
 }
 
-
-/* Rows */
+/* Body cells */
 .pricing-table td {
-  padding: 10px 12px;
-  color: var(--dark-gray);
+  padding: 10px;
   font-size: 0.9rem;
-  border-top: 1px solid #e0e0e0;
-}
+  color: var(--dark-gray);
 
-
-
-.pricing-table tr:nth-child(even) {
+  border: 1px solid var(--yellow);   
   background: var(--white);
 }
 
-.pricing-table th:last-child,
+/* Keep rows white */
+.pricing-table tr {
+  background: var(--white);
+}
+
+/* Right-align cost column */
 .pricing-table td:last-child {
   text-align: right;
 }
@@ -353,7 +341,7 @@ main {
   font-size: 1rem;
 
   padding: 16px 20px;
-  border-radius: 18px;s
+  border-radius: 18px;
 
   text-decoration: none;
   letter-spacing: 0.6px;
