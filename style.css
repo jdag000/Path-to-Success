@@ -181,7 +181,7 @@ main {
 }
 
 .icon-img {
-  width: 52px;
+  width: 100px;
   height: auto;
 }
 
@@ -297,9 +297,8 @@ main {
 .cta-section {
   background: var(--pink);
   color: var(--white);
-  padding: 32px 20px 40px;
-  text-align: display;
-  border-radius: 0;          
+  text-align: center;
+  padding: 18px 6px 24px; 
 }
 
 .cta-section .section-heading {
